@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_toolbar_bg"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_30"
+            android:text="冠宇科技访客系统"/>
+
+        <ImageView
+            android:id="@+id/visitor_back_iv"
+            android:layout_width="@dimen/space_60"
+            android:layout_height="@dimen/space_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_30"
+            android:src="@mipmap/icon_back"
+            android:scaleType="centerInside"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_below="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_background"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/space_1400"
+        android:layout_height="@dimen/space_800"
+        android:layout_marginTop="@dimen/space_180"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_ffffff"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/layout_visitor_list" />
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/visitor_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/visitor_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

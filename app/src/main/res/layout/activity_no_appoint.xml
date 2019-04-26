@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_toolbar_bg"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_30"
+            android:text="冠宇科技访客系统"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_below="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_background"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/no_point_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+            <include layout="@layout/layout_left_visitor"
+                />
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_f3f3f3"
+                android:contentDescription="@null"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/space_90"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_60">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60"
+                        android:src="@mipmap/icon_visitor_info"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_80"
+                        android:text="@string/appoint_detail_info"
+                        android:textSize="@dimen/space_32"
+                        android:textColor="@color/color_01cef5"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/space_0"
+                        android:id="@+id/appiont_teacher_name_tv"
+                        style="@style/lay_content_textview_style"
+                        android:text="@string/appiont_teacher_name"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/appiont_teacher_name_et"
+                        android:layout_width="@dimen/space_240"
+                        android:layout_height="28dp"
+                        android:layout_toRightOf="@+id/appiont_teacher_name_tv"
+                        android:textSize="@dimen/space_24"
+                        android:textColor="@color/color_202020"
+                        android:paddingLeft="@dimen/space_20"
+                        android:inputType="text"
+                        android:background="@drawable/icon_select_edittext_bg" />
+
+                    <ImageView
+                        android:id="@+id/appiont_delete_name_iv"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_width="@dimen/space_40"
+                        android:layout_height="@dimen/space_40"
+                        android:src="@mipmap/icon_delete"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/appiont_teacher_name_et"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/space_0"
+                        android:id="@+id/appiont_teacher_phone_tv"
+                        style="@style/lay_content_textview_style"
+                        android:text="@string/appiont_teacher_phone"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/appiont_teacher_phone_et"
+                        android:layout_width="@dimen/space_240"
+                        android:layout_height="28dp"
+                        android:layout_toRightOf="@+id/appiont_teacher_phone_tv"
+                        android:textSize="@dimen/space_24"
+                        android:textColor="@color/color_202020"
+                        android:paddingLeft="@dimen/space_20"
+                        android:inputType="phone"
+                        android:background="@drawable/icon_select_edittext_bg" />
+
+                    <ImageView
+                        android:id="@+id/appiont_delete_phone_iv"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_width="@dimen/space_40"
+                        android:layout_height="@dimen/space_40"
+                        android:src="@mipmap/icon_delete"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/appiont_teacher_phone_et"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/space_0"
+                        android:id="@+id/appiont_objective_tv"
+                        style="@style/lay_content_textview_style"
+                        android:text="@string/appiont_objective" />
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/appiont_objective_et"
+                        android:layout_width="@dimen/space_428"
+                        android:layout_height="@dimen/space_132"
+                        android:layout_toRightOf="@+id/appiont_objective_tv"
+                        android:textSize="@dimen/space_24"
+                        android:textColor="@color/color_202020"
+                        android:padding="@dimen/space_20"
+                        android:layout_marginRight="15dp"
+                        android:inputType="text"
+                        android:gravity="start|top"
+                        android:background="@drawable/icon_select_edittext_bg" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    >
+
+                    <Button
+                        android:id="@+id/appiont_sure_iv"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/login_select"
+                        android:text="确认"
+
+                        android:textSize="16sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="80dp"/>
+
+                    <Button
+                        android:id="@+id/appiont_cancle_iv"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:scaleType="fitXY"
+                        android:textSize="16sp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/login_cancel_select"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="15dp"
+                        android:text="取消"
+                      />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </ScrollView>
+<!--
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_800"
+        android:layout_centerInParent="true"
+        android:background="@color/color_ffffff">
+
+        <TextView
+            android:layout_width="@dimen/space_486"
+            android:layout_height="@dimen/space_70"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_28"
+            android:background="@drawable/icon_green_textview_bg"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_24"
+            android:gravity="center"
+            android:text="@string/appiont_no_hint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_140"
+            android:layout_marginBottom="@dimen/space_64">
+
+            <include layout="@layout/layout_left_visitor"/>
+
+            <ImageView
+                android:layout_width="@dimen/space_2"
+                android:layout_height="match_parent"
+                android:background="@color/color_f3f3f3"
+                android:contentDescription="@null"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/space_90"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_60">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60"
+                        android:src="@mipmap/icon_visitor_info"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_80"
+                        android:text="@string/appoint_detail_info"
+                        android:textSize="@dimen/space_32"
+                        android:textColor="@color/color_01cef5"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/space_0"
+                        android:id="@+id/appiont_teacher_name_tv"
+                        style="@style/lay_content_textview_style"
+                        android:text="@string/appiont_teacher_name"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/appiont_teacher_name_et"
+                        android:layout_width="@dimen/space_240"
+                        android:layout_height="@dimen/space_44"
+                        android:layout_toRightOf="@+id/appiont_teacher_name_tv"
+                        android:textSize="@dimen/space_24"
+                        android:textColor="@color/color_202020"
+                        android:paddingLeft="@dimen/space_20"
+                        android:inputType="text"
+                        android:background="@drawable/icon_select_edittext_bg" />
+
+                    <ImageView
+                        android:id="@+id/appiont_delete_name_iv"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_width="@dimen/space_40"
+                        android:layout_height="@dimen/space_40"
+                        android:src="@mipmap/icon_delete"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/appiont_teacher_name_et"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/space_0"
+                        android:id="@+id/appiont_teacher_phone_tv"
+                        style="@style/lay_content_textview_style"
+                        android:text="@string/appiont_teacher_phone"
+                        android:layout_centerVertical="true"/>
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/appiont_teacher_phone_et"
+                        android:layout_width="@dimen/space_240"
+                        android:layout_height="@dimen/space_44"
+                        android:layout_toRightOf="@+id/appiont_teacher_phone_tv"
+                        android:textSize="@dimen/space_24"
+                        android:textColor="@color/color_202020"
+                        android:paddingLeft="@dimen/space_20"
+                        android:inputType="phone"
+                        android:background="@drawable/icon_select_edittext_bg" />
+
+                    <ImageView
+                        android:id="@+id/appiont_delete_phone_iv"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_width="@dimen/space_40"
+                        android:layout_height="@dimen/space_40"
+                        android:src="@mipmap/icon_delete"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/appiont_teacher_phone_et"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/space_0"
+                        android:id="@+id/appiont_objective_tv"
+                        style="@style/lay_content_textview_style"
+                        android:text="@string/appiont_objective" />
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/appiont_objective_et"
+                        android:layout_width="@dimen/space_428"
+                        android:layout_height="@dimen/space_132"
+                        android:layout_toRightOf="@+id/appiont_objective_tv"
+                        android:textSize="@dimen/space_24"
+                        android:textColor="@color/color_202020"
+                        android:padding="@dimen/space_20"
+                        android:inputType="text"
+                        android:gravity="start|top"
+                        android:background="@drawable/icon_select_edittext_bg" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/space_96">
+
+                    <ImageView
+                        android:id="@+id/appiont_sure_iv"
+                        android:layout_width="@dimen/space_106"
+                        android:layout_height="@dimen/space_48"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_sure"
+                        android:layout_marginLeft="@dimen/space_100"/>
+
+                    <ImageView
+                        android:id="@+id/appiont_cancle_iv"
+                        android:layout_width="@dimen/space_106"
+                        android:layout_height="@dimen/space_48"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="@dimen/space_80"
+                        android:src="@mipmap/icon_cancle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="center|top"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_green_textview_bg"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/space_26"
+        android:gravity="center"
+        android:text="@string/appiont_no_hint"/>
+</RelativeLayout>

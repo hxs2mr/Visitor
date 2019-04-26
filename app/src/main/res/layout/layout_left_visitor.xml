@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space_640"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/space_90"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60">
+
+        <ImageView
+            android:layout_width="@dimen/space_60"
+            android:layout_height="@dimen/space_60"
+            android:src="@mipmap/icon_visitor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_80"
+            android:text="@string/appoint_visitor_info"
+            android:textSize="@dimen/space_32"
+            android:textColor="@color/color_01cef5"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/appiont_name_tv"
+        style="@style/lay_content_textview_style"
+        android:text="@string/appiont_name"/>
+    <TextView
+        android:id="@+id/appiont_sex_tv"
+        style="@style/lay_content_textview_style"
+        android:text="@string/appiont_sex"/>
+    <TextView
+        android:id="@+id/appiont_nation_tv"
+        style="@style/lay_content_textview_style"
+        android:text="@string/appiont_nation"/>
+    <TextView
+        android:id="@+id/appiont_birthday_tv"
+        style="@style/lay_content_textview_style"
+        android:text="@string/appiont_birthday"/>
+    <TextView
+        android:id="@+id/appiont_id_tv"
+        style="@style/lay_content_textview_style"
+        android:text="@string/appiont_id"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/appiont_address"
+            style="@style/lay_content_textview_style"
+            android:text="@string/appiont_address" />
+
+        <TextView
+            android:id="@+id/appiont_address_tv"
+            style="@style/lay_content_textview_style"
+            android:layout_marginLeft="@dimen/space_0"
+            android:layout_toRightOf="@+id/appiont_address"
+            android:layout_marginRight="@dimen/space_40"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_marginTop="@dimen/space_0"
+            android:id="@+id/appiont_phone_tv"
+            style="@style/lay_content_textview_style"
+            android:text="@string/appiont_phone"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/appiont_phone_et"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/appiont_phone_tv"
+            android:textSize="@dimen/space_24"
+            android:textColor="@color/color_202020"
+            android:paddingLeft="@dimen/space_20"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:visibility="invisible"
+            android:background="@drawable/icon_select_edittext_bg" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

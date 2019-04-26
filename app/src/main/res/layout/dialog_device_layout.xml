@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80"
+        android:background="@color/color_01e5c7">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_32"
+            android:layout_centerInParent="true"
+            android:text="@string/login_please_select_device"/>
+
+
+        <ImageView
+            android:id="@+id/login_close_iv"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_white_close"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_10"/>
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/login_recyclerveiw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        style="@style/lay_divide_line_horizontal"
+        android:contentDescription="@null" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_74"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_cancle_tv"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancle"
+            android:textSize="@dimen/space_30"
+            android:background="@color/color_ffffff"
+            android:textColor="@color/color_01e5c7"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/login_certain_tv"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/certain"
+            android:textSize="@dimen/space_30"
+            android:background="@drawable/ic_cash_background"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</com.lanzhu.autolayout.AutoLinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_484">484px</dimen>
+    <dimen name="space_310">310px</dimen>
+    <dimen name="space_800">800px</dimen>
+    <dimen name="space_1400">1400px</dimen>
+    <dimen name="space_674">674px</dimen>
+    <dimen name="space_486">486px</dimen>
+    <dimen name="space_640">640px</dimen>
+    <dimen name="space_720">720px</dimen>
+    <dimen name="space_480">480px</dimen>
+    <dimen name="space_220">220px</dimen>
+    <dimen name="space_428">428px</dimen>
+    <dimen name="space_436">436px</dimen>
+    <dimen name="space_124">124px</dimen>
+    <dimen name="space_270">270px</dimen>
+    <dimen name="space_290">290px</dimen>
+    <dimen name="space_700">700px</dimen>
+    <dimen name="space_74">74px</dimen>
+    <dimen name="space_854">854px</dimen>
+    <dimen name="space_1200">1200px</dimen>
+    <dimen name="space_675">675px</dimen>
+</resources>

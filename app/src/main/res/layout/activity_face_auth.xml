@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_background"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:id="@+id/textureview_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.gykj.acface.customview.FaceRectView
+            android:id="@+id/facerect_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"  />
+
+        <ImageView
+            android:id="@+id/face_close_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_close"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_60"
+            android:layout_marginRight="@dimen/space_60"/>
+
+        <ImageView
+            android:id="@+id/face_circle_iv"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:background="@mipmap/icon_circle"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

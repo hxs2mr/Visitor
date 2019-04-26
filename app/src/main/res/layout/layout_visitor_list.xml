@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_70"
+    android:background="@color/color_f2f2f2">
+
+
+    <TextView
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_200"
+        android:text="@string/visitor_number"
+        android:textSize="@dimen/space_22"/>
+
+    <TextView
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:text="@string/visitor_name"
+        android:textSize="@dimen/space_22"/>
+
+    <TextView
+        android:id="@+id/item_order_single_tv"
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:text="@string/visitor_phone"
+        android:textSize="@dimen/space_22"/>
+
+
+    <TextView
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:text="@string/visitor_into_time"
+        android:textSize="@dimen/space_22"/>
+
+    <TextView
+        style="@style/lay_cashier_title_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:text="@string/visitor_operate"
+        android:textSize="@dimen/space_22"/>
+
+
+
+</LinearLayout>

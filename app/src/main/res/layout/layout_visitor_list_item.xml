@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_70"
+    android:background="@color/color_ffffff"
+    android:layout_gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/item_visitor_number_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_200"
+        android:textSize="@dimen/space_20"/>
+
+    <TextView
+        android:id="@+id/item_visitor_name_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:textSize="@dimen/space_20"/>
+
+    <TextView
+        android:id="@+id/item_visitor_phone_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:textSize="@dimen/space_20"/>
+
+
+    <TextView
+        android:id="@+id/item_visitor_time_tv"
+        style="@style/lay_cashier_content_textview_style"
+        android:layout_width="@dimen/space_300"
+        android:text="@string/visitor_into_time"
+        android:textSize="@dimen/space_20"/>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_300"
+        style="@style/lay_cashier_content_textview_style">
+
+        <TextView
+            android:id="@+id/item_visitor_operate_tv"
+            android:layout_width="@dimen/space_160"
+            android:layout_height="@dimen/space_50"
+            android:background="@drawable/icon_green_textview_bg"
+            android:text="@string/visitor_operate_sure"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_22"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

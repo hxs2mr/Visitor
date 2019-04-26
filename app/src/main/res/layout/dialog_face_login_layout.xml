@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lanzhu.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space_854"
+    android:layout_height="@dimen/space_480">
+
+
+
+    <TextureView
+        android:id="@+id/textureview_preview"
+        android:layout_width="@dimen/space_854"
+        android:layout_height="@dimen/space_480" />
+
+    <com.gykj.acface.customview.FaceRectView
+        android:id="@+id/facerect_view"
+        android:layout_width="@dimen/space_854"
+        android:layout_height="@dimen/space_480"  />
+
+
+    <ImageView
+        android:id="@+id/dialog_close_iv"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="@dimen/space_40"
+        android:src="@mipmap/icon_close"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_30"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/dialog_circle_iv"
+        android:layout_width="@dimen/space_200"
+        android:layout_height="@dimen/space_200"
+        android:src="@mipmap/icon_circle"
+        android:scaleType="fitCenter"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_140"/>
+
+</com.lanzhu.autolayout.AutoRelativeLayout>

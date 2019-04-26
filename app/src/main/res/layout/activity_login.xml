@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:id="@+id/login_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_toolbar_bg"/>
+        
+        <ImageView
+            android:layout_width="@dimen/space_140"
+            android:layout_height="@dimen/space_60"
+            android:src="@mipmap/icon_company_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_50"/>
+
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_210"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_30"
+            android:textStyle="bold"
+            android:text="@string/company_name"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/login_header_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_290"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/application_name"
+            android:textColor="@color/color_01e5c7"/>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/icon_login_frame"
+            android:layout_marginTop="@dimen/space_58">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/icon_account"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_22"/>
+
+            <EditText
+                android:id="@+id/login_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_01cef5"
+                android:hint="@string/account"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:inputType="text"/>
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:background="@drawable/icon_login_frame"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/space_42">
+
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/icon_password"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_22"/>
+
+
+            <EditText
+                android:id="@+id/login_pass_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_01cef5"
+                android:hint="@string/password"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:inputType="textPassword"/>
+
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/login_login_tv"
+            android:layout_marginTop="@dimen/space_52"
+            android:layout_width="320dp"
+            android:layout_height="47dp"
+            android:background="@drawable/login_select"
+            android:textSize="17sp"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

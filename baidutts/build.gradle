@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+
+
+
+    defaultConfig {
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode cfgs.versionCode
+        versionName cfgs.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${cfgs.androidSupportVersion}"
+    testImplementation "junit:junit:${cfgs.junit}"
+    androidTestImplementation "com.android.support.test:runner:${cfgs.runner}"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:${cfgs.espressoCore}"
+    implementation files('libs/com.baidu.tts_2.3.2.20180713_6101c2a.jar')
+}

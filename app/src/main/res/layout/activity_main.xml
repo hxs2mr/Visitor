@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_toolbar_bg"/>
+
+
+        <TextView
+            android:id="@+id/main_school_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_30"
+            android:text=""/>
+
+        <FrameLayout
+            android:id="@+id/main_message_fra"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:paddingRight="40dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:background="@mipmap/icon_message_number"
+                />
+            <TextView
+                android:layout_width="@dimen/space_30"
+                android:layout_height="@dimen/space_30"
+                android:textSize="@dimen/space_18"
+                android:layout_gravity="right"
+                android:textColor="@color/color_ffffff"
+                android:gravity="center"
+                android:text="0"
+                android:background="@drawable/icon_red_people_bg"
+           />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/main_qrcord_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/space_1"
+        android:textColor="@color/color_00000000"
+        android:background="@null"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/test_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/main_visitor_layout"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/space_140"
+        android:layout_marginRight="@dimen/space_100"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/icon_visitor_list"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/color_333333"
+            android:text="@string/no_leave_school"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/main_visitor_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center"
+
+            android:text="0"
+            android:background="@drawable/icon_red_people_bg"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/main_sensor_iv"
+        android:layout_centerInParent="true"
+        android:layout_width="500dp"
+        android:layout_height="280dp"
+        android:background="@mipmap/icon_card_sensor"
+   />
+
+    <ImageView
+        android:layout_marginTop="@dimen/space_80"
+        android:layout_below="@+id/main_sensor_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_company_name"
+        android:scaleType="fitXY"/>
+
+    
+</RelativeLayout>

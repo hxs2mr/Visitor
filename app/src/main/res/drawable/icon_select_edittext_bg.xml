@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_green_edittext_bg" android:state_focused="true"/>
+    <item android:drawable="@drawable/icon_gray_edittext_bg" android:state_focused="false"/>
+
+</selector>

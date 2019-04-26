@@ -1,0 +1,1 @@
+include ':app', ':baselibrary', ':autolayout', ':adapter', ':idreader', ':acface', ':baidutts', ':idcard'

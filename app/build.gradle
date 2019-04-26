@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+    defaultConfig {
+        applicationId "com.gykj.visitor"
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode cfgs.versionCode
+        versionName cfgs.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    signingConfigs {
+        release {
+            storeFile file('gykj_visitor.jks')
+            storePassword "gzgykj_visitor"
+            keyAlias "key0"
+            keyPassword "gzgykj"
+        }
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled false
+            storeFile file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            applicationVariants.all { variant->
+                variant.outputs.all { output->
+                    //def product = variant.productFlavors[0].name.replace("_","")
+                    outputFileName = "gykj_visitor_v${cfgs.versionName}.apk"
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:${cfgs.androidSupportVersion}"
+    implementation "com.android.support.constraint:constraint-layout:${cfgs.constraintlayout}"
+    implementation "com.android.support:recyclerview-v7:${cfgs.androidSupportVersion}"
+    testImplementation "junit:junit:${cfgs.junit}"
+    androidTestImplementation "com.android.support.test:runner:${cfgs.runner}"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:${cfgs.espressoCore}"
+    implementation project(':baselibrary')
+    /*注解框架*/
+    implementation "com.jakewharton:butterknife:${cfgs.butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${cfgs.butterknife}"
+}

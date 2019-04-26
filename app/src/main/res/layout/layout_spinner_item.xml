@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/space_240"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff">
+
+    <TextView
+        android:id="@+id/epay_spinner_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80"
+        android:gravity="center"
+        android:textSize="@dimen/space_30"
+        android:textColor="@color/color_333333"/>
+    <ImageView
+        style="@style/lay_divide_line_horizontal"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_toolbar_bg"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/space_30"
+            android:text="冠宇科技访客系统"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_below="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_background"/>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_1400"
+        android:layout_height="@dimen/space_800"
+        android:layout_centerInParent="true"
+        android:background="@color/color_ffffff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_140"
+            android:layout_marginBottom="@dimen/space_64">
+
+            <LinearLayout
+                android:layout_width="@dimen/space_436"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/space_90"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_60">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60"
+                        android:src="@mipmap/icon_visitor"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_80"
+                        android:text="@string/result_parent_info"
+                        android:textSize="@dimen/space_32"
+                        android:textColor="@color/color_01cef5"/>
+
+
+                </RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/result_avater_iv"
+                    android:layout_width="@dimen/space_120"
+                    android:layout_height="@dimen/space_120"
+                    android:layout_marginLeft="@dimen/space_96"
+                    android:layout_marginTop="@dimen/space_36"/>
+
+
+                <TextView
+                    android:id="@+id/result_name_tv"
+                    style="@style/lay_content_textview_style"
+                    android:text="@string/result_parent_name"/>
+                <TextView
+                    android:id="@+id/result_phone_tv"
+                    style="@style/lay_content_textview_style"
+                    android:text="@string/result_phone"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/space_4"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_scan_line"
+                android:scaleType="fitXY"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/space_90"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_60">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_60"
+                        android:layout_height="@dimen/space_60"
+                        android:src="@mipmap/icon_child_info"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_80"
+                        android:text="@string/result_child_info"
+                        android:textSize="@dimen/space_32"
+                        android:textColor="@color/color_01cef5"/>
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/result_recyclerview"
+                    android:layout_marginRight="@dimen/space_40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/space_0"
+                        android:id="@+id/result_objective_tv"
+                        style="@style/lay_content_textview_style"
+                        android:text="@string/appiont_objective" />
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/rsult_objective_et"
+                        android:layout_width="@dimen/space_428"
+                        android:layout_height="@dimen/space_132"
+                        android:layout_toRightOf="@+id/result_objective_tv"
+                        android:textSize="@dimen/space_24"
+                        android:textColor="@color/color_202020"
+                        android:padding="@dimen/space_20"
+                        android:inputType="text"
+                        android:gravity="start|top"
+                        android:background="@drawable/icon_select_edittext_bg" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/space_96">
+
+                    <ImageView
+                        android:id="@+id/result_sure_iv"
+                        android:layout_width="@dimen/space_106"
+                        android:layout_height="@dimen/space_48"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_sure"
+                        android:layout_marginLeft="@dimen/space_100"/>
+
+                    <ImageView
+                        android:id="@+id/result_cancle_iv"
+                        android:layout_width="@dimen/space_106"
+                        android:layout_height="@dimen/space_48"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="@dimen/space_80"
+                        android:src="@mipmap/icon_cancle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

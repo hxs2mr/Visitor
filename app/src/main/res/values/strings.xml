@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name" translatable="false">访客系统</string>
+    <string name="appiont_no_hint" translatable="false">对不起，您当前未预约，请先登记信息</string>
+    <string name="appoint_visitor_info" translatable="false">访客信息</string>
+    <string name="appiont_name" translatable="false">访客姓名：</string>
+    <string name="appiont_sex" translatable="false">性别：</string>
+    <string name="appiont_nation" translatable="false">民族：</string>
+    <string name="appiont_birthday" translatable="false">出生年月：</string>
+    <string name="appiont_id" translatable="false">身份证号码：</string>
+    <string name="appiont_address" translatable="false">家庭住址：</string>
+    <string name="appiont_phone" translatable="false">联系电话：</string>
+    <string name="appoint_detail_info" translatable="false">预约信息</string>
+    <string name="appiont_teacher_name" translatable="false">老师姓名：</string>
+    <string name="appiont_teacher_phone" translatable="false">老师电话：</string>
+    <string name="appiont_objective" translatable="false">拜访目的：</string>
+    <string name="appoint_input_teacher_name" translatable="false">请输入老师名字</string>
+    <string name="appoint_input_teacher_phone" translatable="false">请输入老师电话</string>
+    <string name="appoint_input_phone" translatable="false">请输入您的联系电话</string>
+    <string name="appoint_select_teacher" translatable="false">请选择您要预约的老师</string>
+    <string name="appoint_incorrect_phone" translatable="false">手机号码不正确</string>
+    <string name="appiont_date" translatable="false">拜访日期：</string>
+    <string name="appiont_state" translatable="false">状态：已预约</string>
+    <string name="result_parent_info" translatable="false">家长信息</string>
+    <string name="result_child_info" translatable="false">孩子信息</string>
+    <string name="result_phone" translatable="false">电话：</string>
+    <string name="result_parent_name" translatable="false">家长姓名：</string>
+    <string name="result_child_name" translatable="false">学生姓名：</string>
+    <string name="result_child_grade" translatable="false">年级：</string>
+    <string name="result_child_class" translatable="false">班级：</string>
+    <string name="no_leave_school" translatable="false">未离校人员</string>
+    <string name="visitor_number" translatable="false">序号</string>
+    <string name="visitor_name" translatable="false">访客姓名</string>
+    <string name="visitor_phone" translatable="false">访客电话</string>
+    <string name="visitor_into_time" translatable="false">进校时间</string>
+    <string name="visitor_operate" translatable="false">操作</string>
+    <string name="visitor_operate_sure" translatable="false">确认离校</string>
+    <string name="company_name" translatable="false">贵州冠宇科技有限公司</string>
+    <string name="application_name" translatable="false">冠宇科技访客系统</string>
+    <string name="account" translatable="false">请输入账号</string>
+    <string name="password" translatable="false">请输入密码</string>
+    <string name="login" translatable="false">登录</string>
+    <string name="please_select_device" translatable="false">请选择设备</string>
+    <string name="login_please_select_device" translatable="false">请选择学校大门对应的设备</string>
+    <string name="please_input_account">请输入账号</string>
+    <string name="please_input_pass">请输入密码</string>
+    <string name="cancle">取消</string>
+    <string name="certain">确定</string>
+
+</resources>
